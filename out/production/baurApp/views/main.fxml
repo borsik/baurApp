@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="425.0" minWidth="507.0" prefHeight="425.0" prefWidth="507.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+  <tabs>
+    <Tab fx:id="singleStandardTab" text="Single buried pipe">
+      <content>
+          <fx:include fx:id="singleStandard" source="singleStandardView.fxml"/>
+      </content>
+    </Tab>
+      <Tab fx:id="doubleStandardTab" text="Double buried pipe">
+         <content>
+             <fx:include fx:id="doubleStandard" source="doubleStandardView.fxml"/>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

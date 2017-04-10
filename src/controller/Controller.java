@@ -1,13 +1,26 @@
-package sample;
+package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
-
-import java.util.DoubleSummaryStatistics;
+import model.Pipe;
+import model.PipeFactory;
 
 public class Controller {
+
+    @FXML
+    private Tab singleStandardTab;
+    @FXML
+    private Tab doubleStandardTab;
+
+    // Inject tab controller
+    @FXML
+    private SingleStandardController SingleStandardController;
+
+    @FXML
+    private DoubleStandardController DoubleStandardController;
 
     @FXML
     private ChoiceBox dimensionBox;

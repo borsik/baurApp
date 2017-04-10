@@ -1,14 +1,13 @@
 package controller;
 
-import javafx.event.ActionEvent;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Tab;
-import javafx.scene.control.TextField;
-import model.Pipe;
-import model.PipeFactory;
+import javafx.scene.control.TabPane;
 
 public class Controller {
+
+    @FXML private TabPane tabPane;
 
     @FXML
     private Tab singleStandardTab;
@@ -17,101 +16,25 @@ public class Controller {
 
     // Inject tab controller
     @FXML
-    private SingleStandardController SingleStandardController;
+    private SingleStandardController singleStandardController;
 
     @FXML
-    private DoubleStandardController DoubleStandardController;
+    private DoubleStandardController doubleStandardController;
 
-    @FXML
-    private ChoiceBox dimensionBox;
+    public void init() {
+        tabPane.getSelectionModel().selectedItemProperty().addListener((ObservableValue<? extends Tab> observable,
+                                                                        Tab oldValue, Tab newValue) -> {
+            if (newValue == singleStandardTab) {
+                System.out.println("- 2.Tab bar -");
+                System.out.println("xxx_tab2bar_xxxController=" + singleStandardController); //if =null => inject problem
+            } else if (newValue == doubleStandardTab) {
+                System.out.println("- 1.Tab foo -");
+                System.out.println("xxx_tab1foo_xxxController=" + doubleStandardController); //if =null => inject problem
+            } else {
+                System.out.println("- another Tab -");
+            }
+        });
 
-    @FXML
-    private ChoiceBox lengthBox;
-
-    @FXML
-    private ChoiceBox soilBox;
-
-    @FXML
-    private TextField distanceField;
-
-    @FXML
-    private TextField mediumTempField;
-
-    @FXML
-    private TextField surfaceTempField;
-
-
-    @FXML
-    void onSubmitClick(ActionEvent event) {
-        double distance = Double.parseDouble(distanceField.getText());
-        double mediumT = Double.parseDouble(mediumTempField.getText());
-        double surfaceT = Double.parseDouble(surfaceTempField.getText());
-
-        double mediumTK = celsiusToKelvin(mediumT);
-        double surfaceTK = celsiusToKelvin(surfaceT);
-
-        String dimension = (String) dimensionBox.getValue();
-
-        PipeFactory pipeFactory = new PipeFactory();
-        Pipe standardSinglePipe = pipeFactory.makeStandardSinglePipe(dimension);
-
-        double a = Double.parseDouble((String)lengthBox.getValue()) / 1000;
-
-        double ltrInsulation = standardSinglePipe.getLinearThermalResistance();
-
-        String soil = (String) soilBox.getValue();
-        double ltrGround = ltrGround(lambdaGround(soil), a, distance, standardSinglePipe.getExternalDiameter());
-
-        double heatLoss = heatLoss(mediumTK, surfaceTK, ltrInsulation, ltrGround);
-
-        System.out.println(heatLoss);
-
-    }
-
-    //dN is the square cross section of the outer most layer (the soil) considered with an equivalent diameter calculated by Equation (6)
-    public double dN(double a) {
-        return 1.073 * a;
-    }
-
-    public double celsiusToKelvin(double temp) {
-        return 274.15 + temp;
-    }
-
-    //hE is the distance between the centre of the pipe and the ground surface [m] calculated by Equation (5)
-    public double hE(double h, double dE) {
-        return h + dE / 2;
-    }
-
-    public double ltrGround(double lambdaE, double a, double h, double dE) {
-        double dN = dN(a);
-        double hE = hE(h, dE);
-        return (1 / (2 * Math.PI * lambdaE)) * 1 / (Math.cosh(2 * hE / dN));
-    }
-
-    public double lambdaGround(String type) {
-        double lambda;
-        switch (type) {
-            case "Dry":
-                lambda = 0.92;
-                break;
-
-            case "Frozen":
-                lambda = 0.93;
-                break;
-
-            case "Saturated with water":
-                lambda = 0.95;
-                break;
-
-            default:
-                lambda = 0.92;
-                break;
-        }
-        return lambda;
-    }
-
-    public double heatLoss(double mediumT, double surfaceT, double ltrInsulation, double ltrGround) {
-        return (mediumT + surfaceT) / (ltrInsulation + ltrGround);
     }
 
 }

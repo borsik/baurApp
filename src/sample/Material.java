@@ -1,0 +1,16 @@
+package sample;
+
+/**
+ * Created by olzhas on 09/04/2017.
+ */
+public class Material {
+
+    String[] mName = {"HDPE", "LDPE", "XLPE", "Steel", "Stainless Steel", "Glassfiber", "PP", "PVC", "PB", "Aluminium", "Copper", "PUR"};
+    double[] mLambda = {0.42, 0.32, 0.38, 45, 16, 0.2, 0.22, 0.18, 0.22, 218, 390, 0.025};
+    double[] mEmissivity = {0.94, 0.94, 0.94, 0.15, 0.15, 0.94, 0.94, 0.94, 0.94, 0.05, 0.26, 0.94};
+
+    int[] a = {200, 250, 300, 350, 400};
+
+    String[] sType = {"dry", "frozen", "saturated"};
+    double[] sLambda = {0.92, 0.93, 0.95};
+}

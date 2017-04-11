@@ -3,11 +3,12 @@ package controller;
 import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 
-public class DoubleStandardController {
+public class GeneralController {
 
     @FXML
     private ChoiceBox dnBox;
@@ -65,7 +66,11 @@ public class DoubleStandardController {
         hS = 1 / hS;
         double qT = 4 * Math.PI * 0.025 * hS * ((t1 + t2) - t0);
 
-        System.out.print(qT);
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information Dialog");
+        alert.setHeaderText(null);
+        alert.setContentText("Standardized district heating twin pipe heat loss: " + qT);
+        alert.showAndWait();
 
     }
 

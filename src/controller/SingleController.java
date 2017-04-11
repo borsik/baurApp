@@ -3,13 +3,14 @@ package controller;
 import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import model.Pipe;
 import model.PipeFactory;
 
-public class SingleStandardController {
+public class SingleController {
 
     @FXML
     private ChoiceBox dnBox;
@@ -65,7 +66,11 @@ public class SingleStandardController {
 
         double heatLoss = heatLoss(mediumTK, surfaceTK, ltrInsulation, ltrGround);
 
-        System.out.println(heatLoss);
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information Dialog");
+        alert.setHeaderText(null);
+        alert.setContentText("Standardized district heating single pipe heat loss: " + heatLoss);
+        alert.showAndWait();
 
     }
 

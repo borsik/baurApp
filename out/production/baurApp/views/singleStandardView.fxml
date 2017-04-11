@@ -14,7 +14,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SingleStandardController">
        <children>
-          <Button fx:id="button" layoutX="356.0" layoutY="322.0" mnemonicParsing="false" onAction="#onSubmitClick" text="Calculate" />
+          <Button fx:id="btn" layoutX="356.0" layoutY="322.0" mnemonicParsing="false" onAction="#onSubmitClick" text="Calculate" />
           <Accordion layoutX="11.0" layoutY="-10.0" />
           <Accordion layoutX="64.0" layoutY="3.0" />
           <GridPane layoutX="48.0" layoutY="31.0" prefHeight="273.0" prefWidth="384.0">
@@ -37,7 +37,7 @@
                 <Label prefHeight="41.0" prefWidth="200.0" text="Distance between the pipe and the ground surface (m)" wrapText="true" GridPane.rowIndex="3" />
                 <Label prefHeight="41.0" prefWidth="147.0" text="Temperature of the medium (C)" wrapText="true" GridPane.rowIndex="4" />
                 <Label prefHeight="41.0" prefWidth="147.0" text="External surface temperature (C)" wrapText="true" GridPane.rowIndex="5" />
-                <ChoiceBox fx:id="dimensionBox" prefWidth="150.0" GridPane.columnIndex="1">
+                <ChoiceBox fx:id="dnBox" prefWidth="150.0" GridPane.columnIndex="1">
                     <items>
                         <FXCollections fx:factory="observableArrayList">
                             <String fx:value="DN 15" />
@@ -96,8 +96,8 @@
                      </value>
                  </ChoiceBox>
                 <TextField fx:id="distanceField" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                <TextField fx:id="mediumTempField" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                <TextField fx:id="surfaceTempField" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <TextField fx:id="tField" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextField fx:id="t0Field" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
              </children>
           </GridPane>
        </children></AnchorPane>

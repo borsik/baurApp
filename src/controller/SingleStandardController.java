@@ -1,7 +1,9 @@
 package controller;
 
+import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import model.Pipe;
@@ -10,7 +12,7 @@ import model.PipeFactory;
 public class SingleStandardController {
 
     @FXML
-    private ChoiceBox dimensionBox;
+    private ChoiceBox dnBox;
 
     @FXML
     private ChoiceBox lengthBox;
@@ -22,22 +24,34 @@ public class SingleStandardController {
     private TextField distanceField;
 
     @FXML
-    private TextField mediumTempField;
+    private TextField tField;
 
     @FXML
-    private TextField surfaceTempField;
+    private TextField t0Field;
+
+    @FXML
+    private Button btn;
+
+    @FXML
+    public void initialize() {
+        btn.disableProperty().bind(
+                Bindings.isEmpty(t0Field.textProperty())
+                        .or(Bindings.isEmpty(tField.textProperty()))
+                        .or(Bindings.isEmpty(distanceField.textProperty()))
+        );
+    }
 
 
     @FXML
     void onSubmitClick(ActionEvent event) {
         double distance = Double.parseDouble(distanceField.getText());
-        double mediumT = Double.parseDouble(mediumTempField.getText());
-        double surfaceT = Double.parseDouble(surfaceTempField.getText());
+        double mediumT = Double.parseDouble(tField.getText());
+        double surfaceT = Double.parseDouble(t0Field.getText());
 
         double mediumTK = celsiusToKelvin(mediumT);
         double surfaceTK = celsiusToKelvin(surfaceT);
 
-        String dimension = (String) dimensionBox.getValue();
+        String dimension = (String) dnBox.getValue();
 
         PipeFactory pipeFactory = new PipeFactory();
         Pipe standardSinglePipe = pipeFactory.makeStandardSinglePipe(dimension);

@@ -1,5 +1,8 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
  * Created by olzhas on 10/04/2017.
  */
@@ -28,6 +31,7 @@ public class PipeFactory {
     private double[] l3internalDiameter = {84, 104, 119, 134, 154, 174, 193.6, 218.2, 242.8, 272.2, 306.8, 346, 390.4,
             439.6, 488.8, 548, 616.8, 695.6, 784.2, 882.6, 981.2, 1079.6, 1178, 1375};
 
+
     public Pipe makeStandardSinglePipe(String dimension) {
         Pipe pipe = new Pipe();
         int index = -1;
@@ -42,6 +46,7 @@ public class PipeFactory {
         pipe.add(0.42, l3externalDiameter[index], l3internalDiameter[index]);
         return pipe;
     }
+
 
 
 }

@@ -1,97 +1,72 @@
 package controller;
 
+import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
-import model.Pipe;
-import model.PipeFactory;
 
 public class DoubleStandardController {
 
     @FXML
-    private ChoiceBox dimensionBox1;
+    private ChoiceBox dnBox;
 
     @FXML
-    private TextField distanceField1;
+    private TextField t0Field;
 
     @FXML
-    private TextField surfaceTField;
+    private TextField t1Field;
 
     @FXML
-    private TextField mediumT1Field;
+    private TextField t2Field;
 
     @FXML
-    private TextField mediumT2Field;
+    private Button btn;
 
-
+    @FXML
+    public void initialize() {
+        btn.disableProperty().bind(
+                Bindings.isEmpty(t0Field.textProperty())
+                        .or(Bindings.isEmpty(t1Field.textProperty()))
+                                .or(Bindings.isEmpty(t2Field.textProperty()))
+        );
+    }
 
     @FXML
     void onSubmitClick(ActionEvent event) {
-        double distance = Double.parseDouble(distanceField1.getText());
-        double mediumT1 = Double.parseDouble(mediumT1Field.getText());
-        double mediumT2 = Double.parseDouble(mediumT2Field.getText());
-        double surfaceT = Double.parseDouble(surfaceTField.getText());
+        double t1 = 274.15 + Double.parseDouble(t1Field.getText());
+        double t2 = 274.15 + Double.parseDouble(t2Field.getText());
+        double t0 = 274.15 + Double.parseDouble(t0Field.getText());
 
-        double mediumTK1 = celsiusToKelvin(mediumT1);
-        double mediumTK2 = celsiusToKelvin(mediumT1);
-        double surfaceTK = celsiusToKelvin(surfaceT);
+        String dimension = (String) dnBox.getValue();
+        String[] dimension2List = {"DN 15","DN 20","DN 25","DN 32","DN 40","DN 50","DN 65","DN 80",
+                "DN 100","DN 125","DN 150","DN 200","DN 250"};
+        double[] d1List = {125, 125, 140, 160, 160, 200, 225, 250, 315, 400, 450, 400, 710};
+        double[] d2List = {21.3, 26.9, 33.7, 42.4, 48.3, 60.3, 76.1, 88.9, 114.3, 139.7, 168.3, 219.1, 273};
+        double[] dList = {19, 19, 19, 19, 19, 20, 20, 25, 25, 30, 40, 45, 45};
 
-        String dimension = (String) dimensionBox1.getValue();
-
-        PipeFactory pipeFactory = new PipeFactory();
-        Pipe standardSinglePipe = pipeFactory.makeStandardSinglePipe(dimension);
-
-
-        double ltrInsulation = standardSinglePipe.getLinearThermalResistance();
-
-
-    }
-
-    //dN is the square cross section of the outer most layer (the soil) considered with an equivalent diameter calculated by Equation (6)
-    public double dN(double a) {
-        return 1.073 * a;
-    }
-
-    public double celsiusToKelvin(double temp) {
-        return 274.15 + temp;
-    }
-
-    //hE is the distance between the centre of the pipe and the ground surface [m] calculated by Equation (5)
-    public double hE(double h, double dE) {
-        return h + dE / 2;
-    }
-
-    public double ltrGround(double lambdaE, double a, double h, double dE) {
-        double dN = dN(a);
-        double hE = hE(h, dE);
-        return (1 / (2 * Math.PI * lambdaE)) * 1 / (Math.cosh(2 * hE / dN));
-    }
-
-    public double lambdaGround(String type) {
-        double lambda;
-        switch (type) {
-            case "Dry":
-                lambda = 0.92;
+        int j = -1;
+        for (int i = 0; i < dimension2List.length; i++) {
+            if (dimension.equalsIgnoreCase(dimension2List[i])) {
+                j = i;
                 break;
-
-            case "Frozen":
-                lambda = 0.93;
-                break;
-
-            case "Saturated with water":
-                lambda = 0.95;
-                break;
-
-            default:
-                lambda = 0.92;
-                break;
+            }
         }
-        return lambda;
-    }
 
-    public double heatLoss(double mediumT, double surfaceT, double ltrInsulation, double ltrGround) {
-        return (mediumT + surfaceT) / (ltrInsulation + ltrGround);
+        double r1 = d1List[j] / 2000;
+        double r2 = d2List[j] / 2000;
+        double d = dList[j] / 2000;
+
+        double hS = Math.log(Math.pow(r1, 2) / (2 * d * r2)) - Math.log(Math.pow(r1, 4) / (Math.pow(r1, 4) - Math.pow(d, 4))) -
+                Math.pow(((r2 / (2 * d)) + (2 * r2 * Math.pow(d, 3)) / (Math.pow(r1, 4) - Math.pow(d, 4))), 2) /
+                        ((1 + Math.pow((r2 / (2 * d)), 2) - Math.pow((2 * r2 * Math.pow(r1, 2) * d / (Math.pow(r1, 4) - Math.pow(d, 4))), 2)));
+
+        hS = 1 / hS;
+        double qT = 4 * Math.PI * 0.025 * hS * ((t1 + t2) - t0);
+
+        System.out.print(qT);
+
     }
 
 }

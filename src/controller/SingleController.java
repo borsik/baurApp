@@ -7,6 +7,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
+import model.Formula;
 import model.Pipe;
 import model.PipeFactory;
 
@@ -65,9 +66,9 @@ public class SingleController {
         double ltrInsulation = standardSinglePipe.getLinearThermalResistance();
 
         String soil = (String) soilBox.getValue();
-        double ltrGround = ltrGround(lambdaGround(soil), a, distance, standardSinglePipe.getExternalDiameter());
+        double ltrGround = Formula.ltrGround(Formula.lambdaGround(soil), a, distance, standardSinglePipe.getExternalDiameter());
 
-        double heatLoss = heatLoss(mediumTK, surfaceTK, ltrInsulation, ltrGround);
+        double heatLoss = Formula.heatLoss(mediumTK, surfaceTK, ltrInsulation, ltrGround);
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information Dialog");
@@ -77,50 +78,8 @@ public class SingleController {
 
     }
 
-    //dN is the square cross section of the outer most layer (the soil) considered with an equivalent diameter calculated by Equation (6)
-    public double dN(double a) {
-        return 1.073 * a;
-    }
-
     public double celsiusToKelvin(double temp) {
         return 274.15 + temp;
-    }
-
-    //hE is the distance between the centre of the pipe and the ground surface [m] calculated by Equation (5)
-    public double hE(double h, double dE) {
-        return h + dE / 2;
-    }
-
-    public double ltrGround(double lambdaE, double a, double h, double dE) {
-        double dN = dN(a);
-        double hE = hE(h, dE);
-        return (1 / (2 * Math.PI * lambdaE)) * 1 / (Math.cosh(2 * hE / dN));
-    }
-
-    public double lambdaGround(String type) {
-        double lambda;
-        switch (type) {
-            case "Dry":
-                lambda = 0.92;
-                break;
-
-            case "Frozen":
-                lambda = 0.93;
-                break;
-
-            case "Saturated with water":
-                lambda = 0.95;
-                break;
-
-            default:
-                lambda = 0.92;
-                break;
-        }
-        return lambda;
-    }
-
-    public double heatLoss(double mediumT, double surfaceT, double ltrInsulation, double ltrGround) {
-        return (mediumT + surfaceT) / (ltrInsulation + ltrGround);
     }
 
 }

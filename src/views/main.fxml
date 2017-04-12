@@ -14,9 +14,9 @@
              <fx:include fx:id="twin" source="twinView.fxml"/>
          </content>
       </Tab>
-      <Tab fx:id="generalTab" text="Double buried pipe">
+      <Tab fx:id="heatColdLosslTab" text="Heat and cold loss">
           <content>
-              <fx:include fx:id="general" source="generalView.fxml"/>
+              <fx:include fx:id="heatColdLoss" source="heatColdLossView.fxml"/>
           </content>
       </Tab>
   </tabs>

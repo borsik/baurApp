@@ -4,6 +4,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.stage.Stage;
 
 public class Controller {
 
@@ -14,6 +15,9 @@ public class Controller {
     @FXML
     private Tab doubleStandardTab;
 
+    @FXML
+    private Tab heatColdLosslTab;
+
     // Inject tab controller
     @FXML
     private SingleController singleController;
@@ -21,20 +25,22 @@ public class Controller {
     @FXML
     private TwinController twinController;
 
+    @FXML HeatColdLossController heatColdLossController;
 
 
 
-    public void init() {
+
+    public void initialize() {
         tabPane.getSelectionModel().selectedItemProperty().addListener((ObservableValue<? extends Tab> observable,
                                                                         Tab oldValue, Tab newValue) -> {
+            Stage stage = (Stage) tabPane.getScene().getWindow();
+
             if (newValue == singleStandardTab) {
-                System.out.println("- 2.Tab bar -");
-                System.out.println("xxx_tab2bar_xxxController=" + singleController); //if =null => inject problem
+                stage.setHeight(400);
             } else if (newValue == doubleStandardTab) {
-                System.out.println("- 1.Tab foo -");
-                System.out.println("xxx_tab1foo_xxxController=" + twinController); //if =null => inject problem
-            } else {
-                System.out.println("- another Tab -");
+                stage.setHeight(400);
+            } else if (newValue == heatColdLosslTab){
+                stage.setHeight(700);
             }
         });
 

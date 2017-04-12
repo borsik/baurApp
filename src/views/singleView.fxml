@@ -96,10 +96,8 @@
                      </value>
                  </ChoiceBox>
                 <TextField fx:id="distanceField" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                <TextField fx:id="tField" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextField fx:id="tField1" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                 <TextField fx:id="t0Field" prefHeight="27.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
              </children>
           </GridPane>
        </children></AnchorPane>
-
-

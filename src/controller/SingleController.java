@@ -25,7 +25,7 @@ public class SingleController {
     private TextField distanceField;
 
     @FXML
-    private TextField tField;
+    private TextField tField1;
 
     @FXML
     private TextField t0Field;
@@ -35,18 +35,21 @@ public class SingleController {
 
     @FXML
     public void initialize() {
+
         btn.disableProperty().bind(
                 Bindings.isEmpty(t0Field.textProperty())
-                        .or(Bindings.isEmpty(tField.textProperty()))
+                        .or(Bindings.isEmpty(tField1.textProperty()))
                         .or(Bindings.isEmpty(distanceField.textProperty()))
         );
+
+
     }
 
 
     @FXML
     void onSubmitClick(ActionEvent event) {
         double distance = Double.parseDouble(distanceField.getText());
-        double mediumT = Double.parseDouble(tField.getText());
+        double mediumT = Double.parseDouble(tField1.getText());
         double surfaceT = Double.parseDouble(t0Field.getText());
 
         double mediumTK = celsiusToKelvin(mediumT);

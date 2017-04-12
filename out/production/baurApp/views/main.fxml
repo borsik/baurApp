@@ -6,13 +6,18 @@
   <tabs>
     <Tab fx:id="singleStandardTab" text="Single buried pipe">
       <content>
-          <fx:include fx:id="singleStandard" source="singleStandardView.fxml"/>
+          <fx:include fx:id="single" source="singleView.fxml"/>
       </content>
     </Tab>
       <Tab fx:id="doubleStandardTab" text="Double buried pipe">
          <content>
-             <fx:include fx:id="doubleStandard" source="doubleStandardView.fxml"/>
+             <fx:include fx:id="twin" source="twinView.fxml"/>
          </content>
+      </Tab>
+      <Tab fx:id="generalTab" text="Double buried pipe">
+          <content>
+              <fx:include fx:id="general" source="generalView.fxml"/>
+          </content>
       </Tab>
   </tabs>
 </TabPane>

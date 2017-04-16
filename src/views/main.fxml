@@ -19,5 +19,10 @@
               <fx:include fx:id="heatColdLoss" source="heatColdLossView.fxml"/>
           </content>
       </Tab>
+      <Tab fx:id="tempChangeTab" text="Temperature change">
+          <content>
+              <fx:include fx:id="tempChange" source="tempChangeView.fxml"/>
+          </content>
+      </Tab>
   </tabs>
 </TabPane>

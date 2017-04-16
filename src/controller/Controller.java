@@ -35,13 +35,7 @@ public class Controller {
                                                                         Tab oldValue, Tab newValue) -> {
             Stage stage = (Stage) tabPane.getScene().getWindow();
 
-            if (newValue == singleStandardTab) {
-                stage.setHeight(400);
-            } else if (newValue == doubleStandardTab) {
-                stage.setHeight(400);
-            } else if (newValue == heatColdLosslTab){
-                stage.setHeight(700);
-            }
+
         });
 
     }

@@ -174,13 +174,28 @@ public class HeatColdLossController {
             showInfo(s);
 
         } else if (above.isExpanded()) {
-            
+            double windSpeed = Double.parseDouble(windField.getText());
+            double dE = dEList.get(dEList.size() - 1);
+            double ltrSurfce = surfaceLTR(dE, windSpeed);
+            double heatLoss = (t - t0) / (ltr - ltrSurfce);
+            String s = "Single above-ground heat/cold loss: " + heatLoss;
+            showInfo(s);
         }
 
 
 
 
 
+    }
+
+    public double surfaceLTR(double extDiameter, double windSpeed) {
+        double hSE;
+        if (extDiameter > 0.25) {
+            hSE = 0.0081 / extDiameter + Math.PI * Math.sqrt(windSpeed / extDiameter);
+        } else {
+            hSE = 3.96 * Math.sqrt(windSpeed / extDiameter);
+        }
+        return 1 / (hSE * Math.PI * extDiameter);
     }
 
     public void showInfo(String s) {

@@ -47,5 +47,22 @@ public class Formula {
         return lambda;
     }
 
+    public static double heatTransferOuterSurfaceCoefficient(double extDiameter, double windSpeed) {
+        if (extDiameter <= 0.25) {
+            return 0.0081 / extDiameter + Math.PI * Math.sqrt(windSpeed / extDiameter);
+        } else {
+            return 3.96 * Math.sqrt(windSpeed / extDiameter);
+        }
+    }
+
+    public static double heatTransferOuterSurfaceCoefficient(double externalDiameter, double surfaceTemperature, double ambientTemperature) {
+        double hSE = Math.pow((surfaceTemperature - ambientTemperature) / externalDiameter, 0.25);
+        if (externalDiameter <= 0.25) {
+            return 1.25 * hSE;
+        } else {
+            return 1.32 * hSE;
+        }
+    }
+
 
 }

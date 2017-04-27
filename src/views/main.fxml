@@ -24,5 +24,20 @@
               <fx:include fx:id="tempChange" source="tempChangeView.fxml"/>
           </content>
       </Tab>
+      <Tab fx:id="coolingTimeTab" text="Cooling time">
+          <content>
+              <fx:include fx:id="coolingTime" source="coolingTimeView.fxml"/>
+          </content>
+      </Tab>
+      <Tab fx:id="freezingTimeTab" text="Freezing time">
+          <content>
+              <fx:include fx:id="freezingTime" source="freezingTimeView.fxml"/>
+          </content>
+      </Tab>
+      <Tab fx:id="condensationTab" text="Condensation">
+          <content>
+              <fx:include fx:id="condensation" source="condensationView.fxml"/>
+          </content>
+      </Tab>
   </tabs>
 </TabPane>

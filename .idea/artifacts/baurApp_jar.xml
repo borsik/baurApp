@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="baurApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/baurApp_jar</output-path>
+    <root id="archive" name="baurApp.jar">
+      <element id="module-output" name="baurApp" />
+    </root>
+  </artifact>
+</component>

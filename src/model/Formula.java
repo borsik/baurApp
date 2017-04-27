@@ -1,5 +1,7 @@
 package model;
 
+import java.util.HashMap;
+
 /**
  * Created by olzhas on 12/04/2017.
  */
@@ -45,6 +47,18 @@ public class Formula {
                 break;
         }
         return lambda;
+    }
+
+
+    public static double lambdaMaterial(String material) {
+        String[] mName = {"HDPE", "LDPE", "XLPE", "Steel", "Stainless Steel", "Glassfiber", "PP", "PVC", "PB", "Aluminium", "Copper", "PUR"};
+        double[] mLambda = {0.42, 0.32, 0.38, 45, 16, 0.2, 0.22, 0.18, 0.22, 218, 390, 0.025};
+        for (int i = 0; i < mName.length; i++) {
+            if (mName[i].equals(material)) {
+                return mLambda[i];
+            }
+        }
+        return 0;
     }
 
     public static double heatTransferOuterSurfaceCoefficient(double extDiameter, double windSpeed) {

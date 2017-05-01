@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="254.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LayerGridController">
+   <children>
+      <GridPane prefHeight="254.0" prefWidth="437.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="94.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="0.0" prefWidth="98.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="104.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="96.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Layer 1" GridPane.rowIndex="2" />
+            <ChoiceBox fx:id="l1Box" prefWidth="150.0" value="HDPE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="HDPE" />
+                     <String fx:value="LDPE" />
+                     <String fx:value="XLPE" />
+                     <String fx:value="Steel" />
+                     <String fx:value="Stainless Steel" />
+                     <String fx:value="Glassfiber" />
+                     <String fx:value="PP" />
+                     <String fx:value="PVC" />
+                     <String fx:value="PB" />
+                     <String fx:value="Aluminium" />
+                     <String fx:value="Copper" />
+                     <String fx:value="PUR" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <Label text="Layer 2" GridPane.rowIndex="3" />
+            <Label text="Layer 3" GridPane.rowIndex="4" />
+            <Label text="Layer 4" GridPane.rowIndex="5" />
+            <Label text="Layer 5" GridPane.rowIndex="6" />
+            <ChoiceBox fx:id="l2Box" prefWidth="150.0" value="" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="" />
+                     <String fx:value="HDPE" />
+                     <String fx:value="LDPE" />
+                     <String fx:value="XLPE" />
+                     <String fx:value="Steel" />
+                     <String fx:value="Stainless Steel" />
+                     <String fx:value="Glassfiber" />
+                     <String fx:value="PP" />
+                     <String fx:value="PVC" />
+                     <String fx:value="PB" />
+                     <String fx:value="Aluminium" />
+                     <String fx:value="Copper" />
+                     <String fx:value="PUR" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <ChoiceBox fx:id="l3Box" prefWidth="150.0" value="" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="" />
+                     <String fx:value="HDPE" />
+                     <String fx:value="LDPE" />
+                     <String fx:value="XLPE" />
+                     <String fx:value="Steel" />
+                     <String fx:value="Stainless Steel" />
+                     <String fx:value="Glassfiber" />
+                     <String fx:value="PP" />
+                     <String fx:value="PVC" />
+                     <String fx:value="PB" />
+                     <String fx:value="Aluminium" />
+                     <String fx:value="Copper" />
+                     <String fx:value="PUR" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <ChoiceBox fx:id="l4Box" prefWidth="150.0" value="" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="" />
+                     <String fx:value="HDPE" />
+                     <String fx:value="LDPE" />
+                     <String fx:value="XLPE" />
+                     <String fx:value="Steel" />
+                     <String fx:value="Stainless Steel" />
+                     <String fx:value="Glassfiber" />
+                     <String fx:value="PP" />
+                     <String fx:value="PVC" />
+                     <String fx:value="PB" />
+                     <String fx:value="Aluminium" />
+                     <String fx:value="Copper" />
+                     <String fx:value="PUR" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <ChoiceBox fx:id="l5Box" prefWidth="150.0" value="" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="" />
+                     <String fx:value="HDPE" />
+                     <String fx:value="LDPE" />
+                     <String fx:value="XLPE" />
+                     <String fx:value="Steel" />
+                     <String fx:value="Stainless Steel" />
+                     <String fx:value="Glassfiber" />
+                     <String fx:value="PP" />
+                     <String fx:value="PVC" />
+                     <String fx:value="PB" />
+                     <String fx:value="Aluminium" />
+                     <String fx:value="Copper" />
+                     <String fx:value="PUR" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <TextField fx:id="dE1Field" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="dI1Field" prefHeight="26.0" prefWidth="87.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="dE2Field" prefHeight="26.0" prefWidth="87.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="dI2Field" prefHeight="26.0" prefWidth="87.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="dE3Field" prefHeight="26.0" prefWidth="87.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="dI3Field" prefHeight="26.0" prefWidth="87.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="dE4Field" prefHeight="26.0" prefWidth="87.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="dI4Field" prefHeight="26.0" prefWidth="87.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="dE5Field" prefHeight="26.0" prefWidth="87.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="dI5Field" prefHeight="26.0" prefWidth="87.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Material" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="External diameter (mm)" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="Internal diameter (mm)" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</Pane>

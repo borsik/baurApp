@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="425.0" minWidth="507.0" prefHeight="425.0" prefWidth="507.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+  <tabs>
+    <Tab fx:id="singleStandardTab" text="Single buried pipe">
+      <content>
+          <fx:include fx:id="single" source="singleView.fxml"/>
+      </content>
+    </Tab>
+      <Tab fx:id="doubleStandardTab" text="Double buried pipe">
+         <content>
+             <fx:include fx:id="twin" source="twinView.fxml"/>
+         </content>
+      </Tab>
+      <Tab fx:id="heatColdLosslTab" text="Heat and cold loss">
+          <content>
+              <fx:include fx:id="heatColdLoss" source="heatColdLossView.fxml"/>
+          </content>
+      </Tab>
+      <Tab fx:id="tempChangeTab" text="Temperature change">
+          <content>
+              <fx:include fx:id="tempChange" source="tempChangeView.fxml"/>
+          </content>
+      </Tab>
+      <Tab fx:id="coolingTimeTab" text="Cooling time">
+          <content>
+              <fx:include fx:id="coolingTime" source="coolingTimeView.fxml"/>
+          </content>
+      </Tab>
+      <Tab fx:id="freezingTimeTab" text="Freezing time">
+          <content>
+              <fx:include fx:id="freezingTime" source="freezingTimeView.fxml"/>
+          </content>
+      </Tab>
+      <Tab fx:id="condensationTab" text="Condensation">
+          <content>
+              <fx:include fx:id="condensation" source="condensationView.fxml"/>
+          </content>
+      </Tab>
+  </tabs>
+</TabPane>

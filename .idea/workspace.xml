@@ -7,14 +7,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/CondensationController.java" afterPath="$PROJECT_DIR$/src/controller/CondensationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/CoolingTimeController.java" afterPath="$PROJECT_DIR$/src/controller/CoolingTimeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/FreezingTimeController.java" afterPath="$PROJECT_DIR$/src/controller/FreezingTimeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/TempChangeController.java" afterPath="$PROJECT_DIR$/src/controller/TempChangeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Formula.java" afterPath="$PROJECT_DIR$/src/model/Formula.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/controller/CondensationController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/controller/Controller.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/controller/CoolingTimeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/controller/FreezingTimeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/controller/HeatColdLossController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/controller/LayerGridController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/controller/SingleController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/controller/TempChangeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/controller/TwinController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/model/Formula.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/model/Layer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/model/LayerFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/model/Material.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/model/Pipe.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/model/PipeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/views/condensationView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/views/coolingTimeView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/views/freezingTimeView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/views/heatColdLossView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/views/layerGridView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/views/main.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/views/singleView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/views/tempChangeView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ptcalc/views/twinView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/model/Material.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/baurApp_jar/baurApp.jar" afterPath="$PROJECT_DIR$/out/artifacts/baurApp_jar/baurApp.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/baurApp/views/condensationView.fxml" afterPath="$PROJECT_DIR$/out/production/baurApp/views/condensationView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/baurApp/views/coolingTimeView.fxml" afterPath="$PROJECT_DIR$/out/production/baurApp/views/coolingTimeView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/baurApp/views/freezingTimeView.fxml" afterPath="$PROJECT_DIR$/out/production/baurApp/views/freezingTimeView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/baurApp/views/tempChangeView.fxml" afterPath="$PROJECT_DIR$/out/production/baurApp/views/tempChangeView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/condensationView.fxml" afterPath="$PROJECT_DIR$/src/views/condensationView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/coolingTimeView.fxml" afterPath="$PROJECT_DIR$/src/views/coolingTimeView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/freezingTimeView.fxml" afterPath="$PROJECT_DIR$/src/views/freezingTimeView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/heatColdLossView.fxml" afterPath="$PROJECT_DIR$/src/views/heatColdLossView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/singleView.fxml" afterPath="$PROJECT_DIR$/src/views/singleView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/tempChangeView.fxml" afterPath="$PROJECT_DIR$/src/views/tempChangeView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/twinView.fxml" afterPath="$PROJECT_DIR$/src/views/twinView.fxml" />
     </list>
@@ -78,9 +108,41 @@
       <file leaf-file-name="condensationView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/condensationView.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="527">
               <caret line="31" column="108" lean-forward="false" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
-              <folding />
+              <folding>
+                <marker date="1493819728000" expanded="true" signature="3248:3470" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="3248:3512" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="3248:3551" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="3248:3589" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="3248:3622" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="3248:3654" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="3248:3677" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="3248:3701" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="3821:9561" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="3850:4085" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="4111:4643" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="4663:9543" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="4927:5094" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="4960:5069" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="5598:5765" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="5631:5740" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="5874:6976" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="5898:6715" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="5967:6690" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="6739:6809" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="6842:6951" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="7153:8202" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="7177:7939" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="7246:7914" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="7963:8035" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="8068:8177" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="8322:9522" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="8345:9256" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="8412:9232" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="9280:9351" ph="..." />
+                <marker date="1493819728000" expanded="true" signature="9385:9497" ph="..." />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -91,9 +153,39 @@
       <file leaf-file-name="heatColdLossView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/heatColdLossView.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="210" column="121" lean-forward="false" selection-start-line="210" selection-start-column="114" selection-end-line="210" selection-end-column="121" />
-              <folding />
+            <state relative-caret-position="272">
+              <caret line="16" column="175" lean-forward="false" selection-start-line="16" selection-start-column="125" selection-end-line="16" selection-end-column="175" />
+              <folding>
+                <marker date="1493819651000" expanded="true" signature="11669:13668" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="11898:12507" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="11933:12292" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="12012:12256" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="12337:12470" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="12656:13304" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="12691:13089" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="12770:13053" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="13134:13267" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="13445:13635" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="13490:13623" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="13858:15399" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="13880:15375" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="13975:15352" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="14007:15320" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="14112:15287" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="14150:15249" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="14256:15210" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="14309:14616" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="14666:14825" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="14869:15168" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="15519:16875" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="15548:15783" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="15809:16038" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="16058:16857" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="16405:16559" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="16438:16547" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="16682:16836" ph="..." />
+                <marker date="1493819651000" expanded="true" signature="16715:16824" ph="..." />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -104,8 +196,30 @@
       <file leaf-file-name="tempChangeView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/tempChangeView.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="527">
               <caret line="31" column="108" lean-forward="false" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
+              <folding>
+                <marker date="1493819089000" expanded="true" signature="3889:6851" ph="..." />
+                <marker date="1493819089000" expanded="true" signature="5562:6833" ph="..." />
+                <marker date="1493819089000" expanded="true" signature="5926:6093" ph="..." />
+                <marker date="1493819089000" expanded="true" signature="5959:6068" ph="..." />
+                <marker date="1493819089000" expanded="true" signature="6222:6389" ph="..." />
+                <marker date="1493819089000" expanded="true" signature="6255:6364" ph="..." />
+                <marker date="1493819089000" expanded="true" signature="6518:6685" ph="..." />
+                <marker date="1493819089000" expanded="true" signature="6551:6660" ph="..." />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/main.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -114,12 +228,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twinView.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="singleView.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/singleView.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="68" column="20" lean-forward="false" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twinView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/twinView.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="64" />
-              <folding />
+            <state relative-caret-position="102">
+              <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+              <folding>
+                <marker date="1493818951000" expanded="true" signature="1256:4033" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="1318:1751" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="1767:4017" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="2169:3055" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="2188:2892" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="2251:2872" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="2925:3034" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="3308:3462" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="3341:3450" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="3577:3731" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="3610:3719" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="3846:4000" ph="..." />
+                <marker date="1493818951000" expanded="true" signature="3879:3988" ph="..." />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -130,7 +283,7 @@
       <file leaf-file-name="freezingTimeView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/freezingTimeView.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="527">
               <caret line="31" column="108" lean-forward="false" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
               <folding />
             </state>
@@ -143,11 +296,9 @@
       <file leaf-file-name="coolingTimeView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/coolingTimeView.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="527">
               <caret line="31" column="108" lean-forward="false" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
-              <folding>
-                <marker date="1493814310000" expanded="true" signature="5671:7367" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -155,43 +306,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeatColdLossController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/HeatColdLossController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="172" column="52" lean-forward="true" selection-start-line="172" selection-start-column="52" selection-end-line="172" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TempChangeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/TempChangeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="88" column="31" lean-forward="false" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TwinController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/TwinController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-118">
+            <state relative-caret-position="595">
               <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FreezingTimeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/FreezingTimeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="98" column="61" lean-forward="false" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -214,9 +333,9 @@
       <find>layerGr</find>
       <find>mater</find>
       <find>amb</find>
-      <find>surfac</find>
       <find>FXCollections</find>
       <find>surface</find>
+      <find>surfac</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -260,7 +379,6 @@
         <option value="$PROJECT_DIR$/src/controller/DoubleStandardController.java" />
         <option value="$PROJECT_DIR$/src/controller/generalController.java" />
         <option value="$PROJECT_DIR$/src/controller/TwinController.java" />
-        <option value="$PROJECT_DIR$/src/views/singleView.fxml" />
         <option value="$PROJECT_DIR$/src/controller/GeneralController.java" />
         <option value="$PROJECT_DIR$/src/views/generalView.fxml" />
         <option value="$PROJECT_DIR$/src/views/heatColdLoss.fxml" />
@@ -281,11 +399,12 @@
         <option value="$PROJECT_DIR$/src/controller/CoolingTimeController.java" />
         <option value="$PROJECT_DIR$/src/controller/FreezingTimeController.java" />
         <option value="$PROJECT_DIR$/src/controller/TempChangeController.java" />
-        <option value="$PROJECT_DIR$/src/views/twinView.fxml" />
         <option value="$PROJECT_DIR$/src/views/condensationView.fxml" />
         <option value="$PROJECT_DIR$/src/views/coolingTimeView.fxml" />
         <option value="$PROJECT_DIR$/src/views/freezingTimeView.fxml" />
         <option value="$PROJECT_DIR$/src/views/tempChangeView.fxml" />
+        <option value="$PROJECT_DIR$/src/views/twinView.fxml" />
+        <option value="$PROJECT_DIR$/src/views/singleView.fxml" />
       </list>
     </option>
   </component>
@@ -314,7 +433,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -430,24 +548,6 @@
               <option name="myItemId" value="production" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baurApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baurApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="production" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="baurApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -477,6 +577,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -879,9 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,9 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -943,9 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,10 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="72" column="8" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="76" selection-end-column="28" />
-          <folding>
-            <element signature="e#2270#2271#0" expanded="false" />
-            <element signature="e#2306#2307#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,22 +1096,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/singleView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="28" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="70" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/LayerGridController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="84" column="50" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,7 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="649">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,44 +1128,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Material.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="90" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/main.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baurApp.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,7 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="71" column="141" lean-forward="false" selection-start-line="71" selection-start-column="141" selection-end-line="71" selection-end-column="141" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,7 +1149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-111">
           <caret line="715" column="23" lean-forward="false" selection-start-line="715" selection-start-column="23" selection-end-line="715" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,9 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="22" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1136,7 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="98" column="60" lean-forward="false" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,15 +1186,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/HeatColdLossController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="172" column="52" lean-forward="true" selection-start-line="172" selection-start-column="52" selection-end-line="172" selection-end-column="52" />
+        <state relative-caret-position="2805">
+          <caret line="172" column="52" lean-forward="false" selection-start-line="172" selection-start-column="52" selection-end-line="172" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/TempChangeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
+        <state relative-caret-position="1496">
           <caret line="88" column="31" lean-forward="false" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1168,7 +1204,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/TwinController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
+        <state relative-caret-position="595">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
@@ -1176,9 +1212,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/condensationView.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="527">
           <caret line="31" column="108" lean-forward="false" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
-          <folding />
+          <folding>
+            <marker date="1493819728000" expanded="true" signature="3248:3470" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="3248:3512" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="3248:3551" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="3248:3589" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="3248:3622" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="3248:3654" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="3248:3677" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="3248:3701" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="3821:9561" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="3850:4085" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="4111:4643" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="4663:9543" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="4927:5094" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="4960:5069" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="5598:5765" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="5631:5740" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="5874:6976" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="5898:6715" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="5967:6690" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="6739:6809" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="6842:6951" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="7153:8202" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="7177:7939" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="7246:7914" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="7963:8035" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="8068:8177" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="8322:9522" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="8345:9256" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="8412:9232" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="9280:9351" ph="..." />
+            <marker date="1493819728000" expanded="true" signature="9385:9497" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1187,20 +1255,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/coolingTimeView.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="31" column="108" lean-forward="false" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
-          <folding>
-            <marker date="1493814310000" expanded="true" signature="5671:7367" ph="..." />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/freezingTimeView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="527">
           <caret line="31" column="108" lean-forward="false" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
           <folding />
         </state>
@@ -1209,10 +1264,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/heatColdLossView.fxml">
+    <entry file="file://$PROJECT_DIR$/src/views/freezingTimeView.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="210" column="121" lean-forward="false" selection-start-line="210" selection-start-column="114" selection-end-line="210" selection-end-column="121" />
+        <state relative-caret-position="527">
+          <caret line="31" column="108" lean-forward="false" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
           <folding />
         </state>
       </provider>
@@ -1222,9 +1277,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/tempChangeView.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="527">
           <caret line="31" column="108" lean-forward="false" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
-          <folding />
+          <folding>
+            <marker date="1493819089000" expanded="true" signature="3889:6851" ph="..." />
+            <marker date="1493819089000" expanded="true" signature="5562:6833" ph="..." />
+            <marker date="1493819089000" expanded="true" signature="5926:6093" ph="..." />
+            <marker date="1493819089000" expanded="true" signature="5959:6068" ph="..." />
+            <marker date="1493819089000" expanded="true" signature="6222:6389" ph="..." />
+            <marker date="1493819089000" expanded="true" signature="6255:6364" ph="..." />
+            <marker date="1493819089000" expanded="true" signature="6518:6685" ph="..." />
+            <marker date="1493819089000" expanded="true" signature="6551:6660" ph="..." />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1233,8 +1297,96 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/twinView.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="64" />
+        <state relative-caret-position="102">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <marker date="1493818951000" expanded="true" signature="1256:4033" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="1318:1751" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="1767:4017" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="2169:3055" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="2188:2892" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="2251:2872" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="2925:3034" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="3308:3462" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="3341:3450" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="3577:3731" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="3610:3719" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="3846:4000" ph="..." />
+            <marker date="1493818951000" expanded="true" signature="3879:3988" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Material.java" />
+    <entry file="file://$PROJECT_DIR$/src/views/main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/heatColdLossView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="175" lean-forward="false" selection-start-line="16" selection-start-column="125" selection-end-line="16" selection-end-column="175" />
+          <folding>
+            <marker date="1493819651000" expanded="true" signature="11669:13668" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="11898:12507" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="11933:12292" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="12012:12256" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="12337:12470" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="12656:13304" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="12691:13089" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="12770:13053" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="13134:13267" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="13445:13635" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="13490:13623" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="13858:15399" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="13880:15375" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="13975:15352" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="14007:15320" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="14112:15287" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="14150:15249" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="14256:15210" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="14309:14616" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="14666:14825" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="14869:15168" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="15519:16875" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="15548:15783" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="15809:16038" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="16058:16857" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="16405:16559" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="16438:16547" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="16682:16836" ph="..." />
+            <marker date="1493819651000" expanded="true" signature="16715:16824" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/singleView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="68" column="20" lean-forward="false" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
           <folding />
         </state>
       </provider>

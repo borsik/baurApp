@@ -23,13 +23,13 @@
                   <GridPane prefHeight="49.0" prefWidth="373.0">
                      <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="224.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="0.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="0.0" prefWidth="50.0" />
                      </columnConstraints>
                      <rowConstraints>
                         <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <Label prefHeight="34.0" prefWidth="229.0" text="Surface temperature of the pipe (C)" wrapText="true" />
+                        <Label prefHeight="34.0" prefWidth="269.0" text="Surface temperature of the pipe (C)" wrapText="true" />
                         <TextField fx:id="surfaceTField" prefHeight="27.0" prefWidth="100.0" GridPane.columnIndex="1" />
                      </children>
                   </GridPane>
@@ -41,16 +41,16 @@
                      <children>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="54.0" prefWidth="392.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <GridPane layoutX="17.0" layoutY="2.0" prefHeight="34.0" prefWidth="349.0">
+                              <GridPane layoutX="4.0" layoutY="1.0" prefHeight="35.0" prefWidth="362.0">
                                  <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="210.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="0.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="0.0" prefWidth="50.0" />
                                  </columnConstraints>
                                  <rowConstraints>
                                     <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Label prefHeight="41.0" prefWidth="138.0" text="Wind velocity (m/s)" wrapText="true" />
+                                    <Label prefHeight="34.0" prefWidth="209.0" text="Wind velocity (m/s)" wrapText="true" />
                                     <TextField fx:id="windField" prefHeight="27.0" prefWidth="186.0" GridPane.columnIndex="1" />
                                  </children>
                               </GridPane>

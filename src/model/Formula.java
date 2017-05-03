@@ -70,7 +70,7 @@ public class Formula {
     }
 
     public static double heatTransferOuterSurfaceCoefficient(double externalDiameter, double surfaceTemperature, double ambientTemperature) {
-        double hSE = Math.pow((surfaceTemperature - ambientTemperature) / externalDiameter, 0.25);
+        double hSE = Math.pow(Math.abs(surfaceTemperature - ambientTemperature) / externalDiameter, 0.25);
         if (externalDiameter <= 0.25) {
             return 1.25 * hSE;
         } else {

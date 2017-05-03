@@ -30,8 +30,8 @@
          </rowConstraints>
      <children>
         <Label text="Dimension" />
-        <Label prefHeight="41.0" prefWidth="147.0" text="Surface temperature of the casing C" wrapText="true" GridPane.rowIndex="1" />
-        <Label prefHeight="41.0" prefWidth="147.0" text="Temperature of the medium in pipe 1 C" wrapText="true" GridPane.rowIndex="2" />
+        <Label prefHeight="41.0" prefWidth="147.0" text="Surface temperature of the casing (C)" wrapText="true" GridPane.rowIndex="1" />
+        <Label prefHeight="41.0" prefWidth="147.0" text="Temperature of the medium in pipe 1 (C)" wrapText="true" GridPane.rowIndex="2" />
         <ChoiceBox fx:id="dnBox" prefWidth="150.0" value="DN 15" GridPane.columnIndex="1">
            <items>
               <FXCollections fx:factory="observableArrayList">
@@ -51,7 +51,7 @@
               </FXCollections>
            </items>
         </ChoiceBox>
-        <Label layoutX="10.0" layoutY="176.0" prefHeight="41.0" prefWidth="147.0" text="Temperature of the medium in pipe 2 C" wrapText="true" GridPane.rowIndex="3" />
+        <Label layoutX="10.0" layoutY="176.0" prefHeight="41.0" prefWidth="147.0" text="Temperature of the medium in pipe 2 (C)" wrapText="true" GridPane.rowIndex="3" />
         <TextField fx:id="t0Field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         <TextField fx:id="t1Field" layoutX="234.0" layoutY="130.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <TextField fx:id="t2Field" layoutX="234.0" layoutY="183.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />

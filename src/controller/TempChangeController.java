@@ -83,10 +83,10 @@ public class TempChangeController {
         double finalTemp = Math.abs(initial - ambient) * Math.exp(-alpha * lengthPipe);
         double tempChange = initial - finalTemp;
         if (buried.isExpanded()) {
-            String s = "Single buried heat/cold loss: " + tempChange;
+            String s = "Single, buried temperature change: " + tempChange;
             showInfo(s);
         } else if (above.isExpanded()){
-            String s = "Single buried heat/cold loss: " + tempChange;
+            String s = "Single, above-ground temperature change: " + tempChange;
             showInfo(s);
         }
     }

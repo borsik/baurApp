@@ -9,10 +9,10 @@ import model.Formula;
 public class CondensationController {
 
     @FXML
-    ChoiceBox materialField;
+    ChoiceBox materialBox;
 
     @FXML
-    TextField ambientTField;
+    ChoiceBox ambientBox;
 
     @FXML
     TextField initialTField;
@@ -42,7 +42,7 @@ public class CondensationController {
     @FXML
     public void initialize() {
         btn.disableProperty().bind(
-                Bindings.isEmpty(ambientTField.textProperty())
+                Bindings.isEmpty(initialTField.textProperty())
                         .or(Bindings.isEmpty(initialTField.textProperty()))
                         .or(Bindings.isEmpty(deField.textProperty()))
 
@@ -56,28 +56,30 @@ public class CondensationController {
     @FXML
     void submit(ActionEvent event) {
 
-        double ambient = Double.parseDouble(ambientTField.getText());
-        double humidity = (Double)humidityBox.getValue();
+        double ambient = Double.parseDouble((String)ambientBox.getValue());
+        double humidity = Double.parseDouble((String)humidityBox.getValue());
         double de = Double.parseDouble(deField.getText());
         double initial = 274.15 + Double.parseDouble(initialTField.getText());
 
-        String material = (String)materialField.getValue();
+        String material = (String)materialBox.getValue();
         double lambda = Formula.lambdaMaterial(material);
+        double surfaceTempPipe = pipeTemp(humidity, ambient);
 
-        double surfaceTempPipe = pipeTemp(humidity, ambient) + 274.15;
+        if (surfaceTempPipe == 0) {
+            showInfo("Humidity can't be 30 while ambient temperature is -20");
+            return;
+        }
 
+        surfaceTempPipe += 274.15;
         double hse = 0.01;
         if (buried.isExpanded()) {
-
             hse = Formula.heatTransferOuterSurfaceCoefficient(surfaceTempPipe, ambient, de);
-
         } else if (above.isExpanded()) {
             double windSpeed = Double.parseDouble(windField.getText());
             hse = Formula.heatTransferOuterSurfaceCoefficient(de, windSpeed);
         }
-
         double minInsulationThickness = (2 * lambda / hse) * (Math.abs(initial - ambient) / Math.abs(surfaceTempPipe - ambient) - 1);
-        String s = "Minimal insulation thickness: " + minInsulationThickness;
+        String s = "Minimal insulation thickness (m): " + minInsulationThickness;
         showInfo(s);
     }
 

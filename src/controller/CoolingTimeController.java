@@ -93,10 +93,10 @@ public class CoolingTimeController {
         System.out.println(coolingTime);
         coolingTime = coolingTime / (3.6 * heatFlowRate);
         if (buried.isExpanded()) {
-            String s = "Single buried cooling time: " + coolingTime;
+            String s = "Single buried cooling time (h): " + coolingTime;
             showInfo(s);
         } else if (above.isExpanded()){
-            String s = "Single above-ground cooling time " + coolingTime;
+            String s = "Single above-ground cooling time (h): " + coolingTime;
             showInfo(s);
         }
     }
